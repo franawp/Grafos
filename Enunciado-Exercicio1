@@ -1,0 +1,18 @@
+Motivação
+  A Universidade Federal de Lajinha (UFLA) construiu um novo prédio para abrigar departamentos ligados à sua Escola de Engenharia. O prédio funciona de 6h da manhã às 11h da noite, e possui gabinetes de docentes, uma biblioteca setorial, salas de aula, salas reuniões, salas de estudos, banheiros, laboratórios didáticos e de pesquisa, anfiteatros e uma lanchonete. Ao fim do expediente, um guarda patrimonial visita o prédio para fiscalizar se as instalações estão devidamente em bom estado. Ao fim da fiscalização, ele desliga as luzes do prédio.
+
+  Para otimizar o tempo de desligamento das luzes, e garantir que todas sejam apagadas, o prédio conta com um sistema semi-automático de desligamento das lâmpadas. Assim, o acionamento de um botão para o desligamento de uma lâmpada x pode implicar, automaticamente, no desligamento de outra lâmpada y, que está relacionada a x. Isso ocorre devido a uma propagação de sinais via rede sem-fio entre tais luzes inteligentes, que contribui com a economia energética do prédio.
+
+  Mesmo com tal recurso, o guarda precisa acionar alguns interruptores. Sua tarefa consiste em: dadas as ligações entre lâmpadas que podem desligadas automaticamente a partir do fim do funcionamento de uma delas, determine o número mínimo quantos interruptores que precisam ser acionados para o desligamento de todas as lâmpadas do prédio.
+
+  Lembre-se que o prédio pode possuir vários interruptores, sendo passível de ligar qualquer lâmpada a partir deles. O recurso de desligamento automático por meio de propagação de sinais é útil, principalmente, entre 11h da noite e 6h da manhã do outro dia, quando o prédio é fechado e o desperdício de luzes acesas desnecessariamente é maior, visto que não haverá pessoas circulando no prédio.
+
+
+
+Entrada
+A primeira linha da entrada corresponde ao númeor de casos de teste a serem resolvidos. Cada caso de teste inicia com dois inteiros: o número de lâmpadas (1 <= n <= 10.000) e o número de ligações entre as lâmpadas (0 <=m <= 100.000) para o desligamento automático. Cada uma das m linhas subsequentes são representadas por dois inteiros, 1 <= x,y <= n, indicando que a lâmpada x aciona o desligamento da lâmpada y. O fim de cada caso de teste é seguido por uma linha em branco (com a exceção do último caso de teste).
+
+
+
+Saída
+Para cada caso de teste, imprima o número mínimo de interruptores que devem ser acionados para o desligamento de todas as luzes.
